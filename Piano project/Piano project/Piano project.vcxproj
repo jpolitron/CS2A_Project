@@ -133,12 +133,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Piano project.cpp" />
+    <ClCompile Include="Piano.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Piano project.h">
+    <ClInclude Include="Piano.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Piano.resx">
+      <DependentUpon>Piano.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

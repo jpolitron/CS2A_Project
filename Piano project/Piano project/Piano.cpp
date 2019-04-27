@@ -1,4 +1,4 @@
-#include "Piano project.h"
+#include "Piano.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -7,6 +7,6 @@ using namespace System::Windows::Forms;
 void Main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	Pianoproject::Pianoproject form;
+	Piano::Piano form;
 	Application::Run(%form);
 }
