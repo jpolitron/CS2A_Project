@@ -134,8 +134,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="music.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="music.h" />
     <ClInclude Include="Piano.h">
       <FileType>CppForm</FileType>
     </ClInclude>
