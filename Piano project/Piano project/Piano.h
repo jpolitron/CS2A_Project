@@ -140,6 +140,7 @@ namespace Piano {
 			this->button3->Text = L"E";
 			this->button3->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Piano::button3_Click);
 			// 
 			// button4
 			// 
@@ -167,6 +168,7 @@ namespace Piano {
 			this->button5->Text = L"G";
 			this->button5->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &Piano::button5_Click);
 			// 
 			// button6
 			// 
@@ -180,6 +182,7 @@ namespace Piano {
 			this->button6->Text = L"A";
 			this->button6->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &Piano::button6_Click);
 			// 
 			// button7
 			// 
@@ -193,6 +196,7 @@ namespace Piano {
 			this->button7->Text = L"B";
 			this->button7->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &Piano::button7_Click);
 			// 
 			// button8
 			// 
@@ -206,6 +210,7 @@ namespace Piano {
 			this->button8->Text = L"C1";
 			this->button8->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &Piano::button8_Click);
 			// 
 			// button9
 			// 
@@ -219,6 +224,7 @@ namespace Piano {
 			this->button9->Text = L"D1";
 			this->button9->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &Piano::button9_Click);
 			// 
 			// button10
 			// 
@@ -232,6 +238,7 @@ namespace Piano {
 			this->button10->Text = L"E1";
 			this->button10->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Click += gcnew System::EventHandler(this, &Piano::button10_Click);
 			// 
 			// button11
 			// 
@@ -376,26 +383,92 @@ namespace Piano {
 		}
 #pragma endregion
 private: System::Void button15_Click(System::Object^  sender, System::EventArgs^  e) {
-	}
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("Bb.wav");
+	player->Load();
+	player->PlaySync();
+}
 private: System::Void Piano_Load(System::Object^  sender, System::EventArgs^  e) {
+
 }
 private: System::Void button11_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("C_s.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button12_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("D_s.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button13_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("F_s.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button14_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("G_s.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button16_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("C_s1.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("D_s1.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("F.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("C.wav");
+	player->Load();
+	player->PlaySync();
 }
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("D.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("E.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("G.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("A.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("B.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("C_s1.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("D_s1.wav");
+	player->Load();
+	player->PlaySync();
+}
+private: System::Void button10_Click(System::Object^  sender, System::EventArgs^  e) {
+	System::Media::SoundPlayer^ player = gcnew System::Media::SoundPlayer("E1.wav");
+	player->Load();
+	player->PlaySync();
 }
 };
 }
