@@ -60,19 +60,6 @@ namespace Piano {
 
 	protected:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private:
 		/// <summary>
 		/// Required designer variable.
